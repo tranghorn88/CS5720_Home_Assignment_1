@@ -16,11 +16,14 @@ Broadcasting allow TensorFlow to automatically expand dimensions so that tensor 
 
 ## Task 2:  Loss Functions & Hyperparameter Tuning - Implement and Compare Loss Functions
 ### Description:
-- Defined ground true value (`y_true`) and two predicted values (`y_pred1` and `y_pred2`).
+- Defined ground true value (`y_true`) and two predicted values (`y_pred1` and `y_pred2`). Ground truth labels (`y_true`) were defined in one-hot encoded format. `y_pred1` is more confident and closer to correct classes meanwhile y_pred2 is less confident.
 - Computed Mean Squared Error (MSE) and Categorical Cross-Entropy (CCE) losses.
 - Compared how small changes in predictions affected the loss values
 - A bar chart was plotted to compare the four different loss values (MSE1, MSE2, CCE1, CCE2)
-   
+### Observation:
+The Mean Square Error (MSE) increased when the predictions deviated more from the true labels. This show that MSE is sensitive to small changes in predicted probabilities.
+The Categorical Cross-Entropy (CCE) also increased with worse preductions, but the change was more significant compared to MSE as you can see in the bar chart. Therefore, CCE penalizes incorrect predictions more heavily then MSE, making it more suitable for classification tasks.
+
 ## Task 3: Train a Model with Different Optimizers - Train MNIST Model with Adam & SGD
 ### Description:
 - Loaded and normalized the MNIST dataset
