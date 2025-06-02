@@ -20,7 +20,7 @@ Broadcasting allow TensorFlow to automatically expand dimensions so that tensor 
 - Computed Mean Squared Error (MSE) and Categorical Cross-Entropy (CCE) losses.
 - Compared how small changes in predictions affected the loss values
 - A bar chart was plotted to compare the four different loss values (MSE1, MSE2, CCE1, CCE2)
-- 
+   
 ## Task 3: Train a Model with Different Optimizers - Train MNIST Model with Adam & SGD
 ### Description:
 - Loaded and normalized the MNIST dataset
